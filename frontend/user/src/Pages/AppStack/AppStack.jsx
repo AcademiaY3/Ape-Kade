@@ -9,6 +9,7 @@ import Products from './Products/Products'
 import Cart from './Cart/Cart'
 import WishList from './WishList/WishList'
 import Checkout from './Checkout/Checkout'
+import Error404 from '../Errors/404/Error404'
 
 export default function AppStack() {
     return (
@@ -21,7 +22,8 @@ export default function AppStack() {
             {/* <Products/> */}
             {/* <Cart/> */}
             {/* <WishList/> */}
-            <Checkout/>
+            {/* <Checkout/> */}
+            {/* <Error404/> */}
             <Footer/>
       </>
   )
