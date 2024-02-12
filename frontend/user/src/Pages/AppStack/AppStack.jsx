@@ -4,6 +4,7 @@ import Footer from '../../Components/Footer/Footer'
 import Home from './Home/Home'
 import About from './About/About'
 import Contact from './Contact/Contact'
+import SingleProduct from './SingleProduct/SingleProduct'
 
 export default function AppStack() {
     return (
@@ -11,7 +12,8 @@ export default function AppStack() {
             <Header />
             {/* <Home/> */}
             {/* <About/> */}
-            <Contact/>
+            {/* <Contact/> */}
+            <SingleProduct/>
             <Footer/>
       </>
   )
