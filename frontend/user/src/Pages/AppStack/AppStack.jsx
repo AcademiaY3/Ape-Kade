@@ -6,6 +6,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import SingleProduct from './SingleProduct/SingleProduct'
 import Products from './Products/Products'
+import Cart from './Cart/Cart'
 
 export default function AppStack() {
     return (
@@ -15,7 +16,8 @@ export default function AppStack() {
             {/* <About/> */}
             {/* <Contact/> */}
             {/* <SingleProduct/> */}
-            <Products/>
+            {/* <Products/> */}
+            <Cart/>
             <Footer/>
       </>
   )
