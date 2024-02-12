@@ -11,6 +11,7 @@ import WishList from './WishList/WishList'
 import Checkout from './Checkout/Checkout'
 import Error404 from '../Errors/404/Error404'
 import SellerStore from './SellerStore/SellerStore'
+import Sellers from './Sellers/Sellers'
 
 export default function AppStack() {
     return (
@@ -25,7 +26,8 @@ export default function AppStack() {
             {/* <WishList/> */}
             {/* <Checkout/> */}
             {/* <Error404/> */}
-            <SellerStore/>
+            {/* <SellerStore/> */}
+            <Sellers/>
             <Footer/>
       </>
   )
