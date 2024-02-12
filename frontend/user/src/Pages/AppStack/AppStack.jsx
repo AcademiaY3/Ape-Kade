@@ -7,6 +7,7 @@ import Contact from './Contact/Contact'
 import SingleProduct from './SingleProduct/SingleProduct'
 import Products from './Products/Products'
 import Cart from './Cart/Cart'
+import WishList from './WishList/WishList'
 
 export default function AppStack() {
     return (
@@ -17,7 +18,8 @@ export default function AppStack() {
             {/* <Contact/> */}
             {/* <SingleProduct/> */}
             {/* <Products/> */}
-            <Cart/>
+            {/* <Cart/> */}
+            <WishList/>
             <Footer/>
       </>
   )
