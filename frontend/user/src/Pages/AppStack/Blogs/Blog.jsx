@@ -7,7 +7,7 @@ export default function Blog() {
     return (
         <>
             <BlogHeader />
-            <section className="mt-6 mb-lg-14 mb-8">
+            <section className="mt-6 mb-0">
                 {/* container */}
                 <div className="container">
                     <BlogBanner />

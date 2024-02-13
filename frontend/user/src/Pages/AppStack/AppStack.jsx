@@ -14,6 +14,7 @@ import SellerStore from './SellerStore/SellerStore'
 import Sellers from './Sellers/Sellers'
 import Profile from './Profile/Profile'
 import Blog from './Blogs/Blog'
+import BlogDetail from './BlogDetail/BlogDetail'
 
 export default function AppStack() {
     return (
@@ -31,7 +32,8 @@ export default function AppStack() {
             {/* <SellerStore/> */}
             {/* <Sellers/> */}
             {/* <Profile/> */}
-            <Blog/>
+            {/* <Blog/> */}
+            <BlogDetail/>
             <Footer/>
       </>
   )
