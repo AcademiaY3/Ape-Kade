@@ -5,7 +5,7 @@ import AccountDelete from './AccountDelete/AccountDelete'
 
 export default function ProfileSettings() {
     return (
-        <div className="col-lg-9 col-md-8 col-12">
+        <div className="col-lg-10 col-md-8 col-12">
             <div className="py-6 p-md-6">
                 <div className="mb-6">
                     {/* heading */}
