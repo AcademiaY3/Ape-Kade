@@ -3,6 +3,8 @@ import ProfileNavbar from './ProfileNavbar/ProfileNavbar'
 import Notification from './Notification/Notification'
 import ProfileAddress from './ProfileAddress/ProfileAddress'
 import ProfileSettings from './ProfileSettings/ProfileSettings'
+import ProfileOrder from './ProfileOrder/ProfileOrder'
+import ProfilePayment from './ProfilePayment/ProfilePayment'
 
 export default function Profile() {
     return (
@@ -15,7 +17,9 @@ export default function Profile() {
                     {/* content outlet */}
                     {/* <Notification/> */}
                     {/* <ProfileAddress/> */}
-                    <ProfileSettings/>
+                    {/* <ProfileSettings/> */}
+                    {/* <ProfileOrder/> */}
+                    <ProfilePayment/>
                 </div>
             </div>
         </section>

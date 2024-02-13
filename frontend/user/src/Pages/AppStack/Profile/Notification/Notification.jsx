@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Notification() {
     return (
-        <div className="col-lg-9 col-md-8 col-12">
-            <div className="py-6 p-md-6 p-lg-10">
+        <div className="col-lg-10 col-md-8 col-12">
+            <div className="py-6 p-md-6">
                 <div className="mb-6">
                     {/* heading */}
                     <h2 className="mb-0">Notification settings</h2>
