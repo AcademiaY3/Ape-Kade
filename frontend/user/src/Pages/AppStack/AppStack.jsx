@@ -12,6 +12,7 @@ import Checkout from './Checkout/Checkout'
 import Error404 from '../Errors/404/Error404'
 import SellerStore from './SellerStore/SellerStore'
 import Sellers from './Sellers/Sellers'
+import Profile from './Profile/Profile'
 
 export default function AppStack() {
     return (
@@ -27,7 +28,8 @@ export default function AppStack() {
             {/* <Checkout/> */}
             {/* <Error404/> */}
             {/* <SellerStore/> */}
-            <Sellers/>
+            {/* <Sellers/> */}
+            <Profile/>
             <Footer/>
       </>
   )

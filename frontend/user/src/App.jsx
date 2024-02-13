@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-      {/* <AppStack/> */}
+      <AppStack/>
       {/* <SignIn/> */}
       {/* <SignUp/> */}
-      <ForgotPassword/>
+      {/* <ForgotPassword/> */}
     </>
   )
 }
