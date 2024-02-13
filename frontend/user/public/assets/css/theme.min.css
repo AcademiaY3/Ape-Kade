@@ -5226,7 +5226,11 @@ fieldset:disabled .btn {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--fc-navbar-active-color);
+  /* color: var(--fc-navbar-active-color); */
+  background-color: #0aad0a;
+  color: white !important;
+  padding: 3px;
+  border-radius: 5px;
 }
 .navbar-nav .dropdown-menu {
   position: static;

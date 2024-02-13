@@ -33,7 +33,7 @@ export default function Navigator() {
                         <div className="mt-0 w-100 d-flex flex-row justify-content-between align-items-center">
                             <ul className="navbar-nav align-items-center navbar-offcanvas-color">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Home</a>
+                                    <a className="nav-link active" href="#" role="button" aria-expanded="false">Home</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#" role="button" aria-expanded="false">Shop</a>
@@ -55,6 +55,9 @@ export default function Navigator() {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#" role="button" aria-expanded="false">Orders</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link text-danger" href="#" role="button" aria-expanded="false">Logout</a>
                                 </li>
                             </ul>
                             <div className="d-flex flex-row justify-content-around align-items-center d-none d-lg-block">
