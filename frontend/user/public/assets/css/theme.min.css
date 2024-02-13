@@ -5227,7 +5227,7 @@ fieldset:disabled .btn {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   /* color: var(--fc-navbar-active-color); */
-  background-color: #0aad0a;
+  background-color: #001e2b;
   color: white !important;
   padding: 3px;
   border-radius: 5px;

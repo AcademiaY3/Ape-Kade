@@ -75,13 +75,13 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <div className="col-6 col-sm-6 col-md-3">
-                                <h6 className="mb-4">Freshcart programs</h6>
+                                <h6 className="mb-4">Apekade programs</h6>
                                 <ul className="nav flex-column">
                                     {/* list */}
-                                    <li className="nav-item mb-2"><a href="#!" className="nav-link">Freshcart programs</a></li>
+                                    <li className="nav-item mb-2"><a href="#!" className="nav-link">Apekade programs</a></li>
                                     <li className="nav-item mb-2"><a href="#!" className="nav-link">Gift Cards</a></li>
                                     <li className="nav-item mb-2"><a href="#!" className="nav-link">Promos &amp; Coupons</a></li>
-                                    <li className="nav-item mb-2"><a href="#!" className="nav-link">Freshcart Ads</a></li>
+                                    <li className="nav-item mb-2"><a href="#!" className="nav-link">Apekade Ads</a></li>
                                     <li className="nav-item mb-2"><a href="#!" className="nav-link">Careers</a></li>
                                 </ul>
                             </div>
@@ -112,7 +112,7 @@ export default function Footer() {
                         </div>
                         <div className="col-lg-7 mt-4 mt-md-0">
                             <ul className="list-inline mb-0 text-lg-end text-center">
-                                <li className="list-inline-item mb-2 mb-md-0 text-dark">Get deliveries with FreshCart</li>
+                                <li className="list-inline-item mb-2 mb-md-0 text-dark">Get deliveries with Apekade</li>
                                 <li className="list-inline-item ms-4">
                                     <a href="#!"> <img src="../assets/images/appbutton/appstore-btn.svg" alt style={{ width: 140 }} /></a>
                                 </li>
@@ -125,8 +125,8 @@ export default function Footer() {
                 </div>
                 <div className="border-top py-4">
                     <div className="row align-items-center">
-                        <div className="col-md-6"><span className="small text-muted">© 2022 <span id="copyright"> -
-                        </span>FreshCart eCommerce HTML Template. All rights reserved. Powered by <a href="https://codescandy.com/">Codescandy</a>.</span></div>
+                        <div className="col-md-6"><span className="small text-muted">© 2024 <span id="copyright"> -
+                        </span>All rights reserved. Powered by <a href="#">Apekade</a>.</span></div>
                         <div className="col-md-6">
                             <ul className="list-inline text-md-end mb-0 small mt-3 mt-md-0">
                                 <li className="list-inline-item text-muted">Follow us on</li>

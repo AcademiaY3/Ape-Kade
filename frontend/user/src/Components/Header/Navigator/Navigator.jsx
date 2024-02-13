@@ -56,7 +56,7 @@ export default function Navigator() {
                                     <a className="nav-link" href="#" role="button" aria-expanded="false">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Orders</a>
+                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Blogs</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link text-danger" href="#" role="button" aria-expanded="false">Logout</a>

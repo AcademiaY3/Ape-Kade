@@ -13,6 +13,7 @@ import Error404 from '../Errors/404/Error404'
 import SellerStore from './SellerStore/SellerStore'
 import Sellers from './Sellers/Sellers'
 import Profile from './Profile/Profile'
+import Blog from './Blogs/Blog'
 
 export default function AppStack() {
     return (
@@ -29,7 +30,8 @@ export default function AppStack() {
             {/* <Error404/> */}
             {/* <SellerStore/> */}
             {/* <Sellers/> */}
-            <Profile/>
+            {/* <Profile/> */}
+            <Blog/>
             <Footer/>
       </>
   )
