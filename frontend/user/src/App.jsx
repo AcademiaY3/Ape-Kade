@@ -3,6 +3,7 @@ import React from 'react'
 import AppStack from './Pages/AppStack/AppStack'
 import SignIn from './Pages/AuthStack/SignIn/SignIn'
 import SignUp from './Pages/AuthStack/SignUp/SignUp'
+import ForgotPassword from './Pages/AuthStack/ForgotPassword/ForgotPassword'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <>
       {/* <AppStack/> */}
       {/* <SignIn/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
+      <ForgotPassword/>
     </>
   )
 }
