@@ -23,16 +23,11 @@ export default function Navigator() {
                             </form>
                         </div>
                         <div className="d-block d-lg-none mb-4">
-                            <a className="btn btn-primary w-100 d-flex justify-content-center align-items-center" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a className="btn btn-primary w-100 d-flex justify-content-center align-items-center" >
                                 <span className="me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-grid">
-                                        <rect x={3} y={3} width={7} height={7} />
-                                        <rect x={14} y={3} width={7} height={7} />
-                                        <rect x={14} y={14} width={7} height={7} />
-                                        <rect x={3} y={14} width={7} height={7} />
-                                    </svg>
+                                    <i className="fa-solid fa-user fs-5 text-white" />
                                 </span>
-                                Home Page
+                                Vist Profile
                             </a>
                         </div>
                         <div className="mt-0 w-100 d-flex flex-row justify-content-between align-items-center">
