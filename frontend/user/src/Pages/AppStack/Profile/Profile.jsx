@@ -16,10 +16,10 @@ export default function Profile() {
                     <ProfileNavbar/>
                     {/* content outlet */}
                     {/* <Notification/> */}
-                    {/* <ProfileAddress/> */}
+                    <ProfileAddress/>
                     {/* <ProfileSettings/> */}
                     {/* <ProfileOrder/> */}
-                    <ProfilePayment/>
+                    {/* <ProfilePayment/> */}
                 </div>
             </div>
         </section>
