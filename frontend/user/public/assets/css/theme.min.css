@@ -7824,6 +7824,7 @@ fieldset:disabled .btn {
 .offcanvas-xxl {
   --fc-offcanvas-zindex: 1045;
   --fc-offcanvas-width: 560px;
+  /* --fc-offcanvas-width: 75%; */
   --fc-offcanvas-height: 30vh;
   --fc-offcanvas-padding-x: 1rem;
   --fc-offcanvas-padding-y: 1rem;

@@ -15,11 +15,13 @@ import Sellers from './Sellers/Sellers'
 import Profile from './Profile/Profile'
 import Blog from './Blogs/Blog'
 import BlogDetail from './BlogDetail/BlogDetail'
+import { Outlet } from 'react-router-dom'
 
 export default function AppStack() {
     return (
         <>
             <Header />
+            <Outlet/>
             {/* <Home/> */}
             {/* <About/> */}
             {/* <Contact/> */}
@@ -29,7 +31,7 @@ export default function AppStack() {
             {/* <WishList/> */}
             {/* <Checkout/> */}
             {/* <Error404/> */}
-            <SellerStore/>
+            {/* <SellerStore/> */}
             {/* <Sellers/> */}
             {/* <Profile/> */}
             {/* <Blog/> */}

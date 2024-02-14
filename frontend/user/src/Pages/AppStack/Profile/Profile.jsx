@@ -5,6 +5,7 @@ import ProfileAddress from './ProfileAddress/ProfileAddress'
 import ProfileSettings from './ProfileSettings/ProfileSettings'
 import ProfileOrder from './ProfileOrder/ProfileOrder'
 import ProfilePayment from './ProfilePayment/ProfilePayment'
+import { Outlet } from 'react-router-dom'
 
 export default function Profile() {
     return (
@@ -15,8 +16,9 @@ export default function Profile() {
                 <div className="row">
                     <ProfileNavbar/>
                     {/* content outlet */}
+                    <Outlet/>
                     {/* <Notification/> */}
-                    <ProfileAddress/>
+                    {/* <ProfileAddress/> */}
                     {/* <ProfileSettings/> */}
                     {/* <ProfileOrder/> */}
                     {/* <ProfilePayment/> */}
