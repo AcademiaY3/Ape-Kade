@@ -47,7 +47,7 @@ export default function ProfilePayment() {
             </div>
           </div>
           <div className="d-none d-lg-flex justify-content-end align-items-start col-12 col-lg-4 offset-lg-1">
-            <img src="../assets/images/profile/pay.png" alt className="img-fluid rounded" />
+            <img src="/assets/images/profile/pay.png" alt className="img-fluid rounded" />
           </div>
         </div>
       </div>
