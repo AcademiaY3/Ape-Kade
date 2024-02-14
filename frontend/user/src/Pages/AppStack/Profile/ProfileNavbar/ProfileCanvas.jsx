@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function ProfileCanvas() {
     return (
         <>{/* modal */}
-            <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
+            <div className="offcanvas offcanvas-start w-75" tabIndex={-1} id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
                 {/* offcanvas header */}
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasAccountLabel">Account Settings</h5>
@@ -14,38 +15,38 @@ export default function ProfileCanvas() {
                     <ul className="nav flex-column nav-pills nav-pills-dark">
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="account-orders.html">
+                            <NavLink to={'order'} className="nav-link" aria-current="page" >
                                 <i className="fa-solid fa-cart-shopping me-2" />
                                 Your Orders
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link active" href="account-settings.html">
+                            <NavLink to={'settings'} className="nav-link" >
                                 <i className="fa-solid fa-gear me-2" />
                                 Settings
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-address.html">
+                            <NavLink to={'address'} className="nav-link">
                                 <i className="fa-solid fa-map me-2" />
                                 Address
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-payment-method.html">
+                            <NavLink to={'payment'} className="nav-link" >
                                 <i className="fa-solid fa-credit-card me-2" />
                                 Payment Method
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-notification.html">
+                            <NavLink to={'notification'} className="nav-link" >
                                 <i className="fa-solid fa-bell me-2" />
                                 Notification
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

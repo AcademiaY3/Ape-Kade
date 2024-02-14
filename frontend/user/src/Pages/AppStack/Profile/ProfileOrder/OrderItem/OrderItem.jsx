@@ -4,7 +4,7 @@ export default function OrderItem() {
     return (
         <tr>
             <td className="align-middle border-top-0 w-0">
-                <a href="#"><img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce" className="icon-shape icon-xl" /></a>
+                <a href="#"><img src="/assets/images/products/product-img-1.jpg" alt="Ecommerce" className="icon-shape icon-xl" /></a>
             </td>
             <td className="align-middle border-top-0">
                 <a href="#" className="fw-semibold text-inherit">

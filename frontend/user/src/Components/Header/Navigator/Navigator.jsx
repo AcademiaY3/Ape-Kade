@@ -7,9 +7,9 @@ export default function Navigator() {
             <div className="container-fluid">
                 <div className="offcanvas offcanvas-start w-75" tabIndex={-1} id="navbar-default" aria-labelledby="navbar-defaultLabel">
                     <div className="offcanvas-header pb-1">
-                        <a href="./index.html">
-                            <img className='w-50' src="../assets/images/logo/freshcart-logo.png" alt="eCommerce HTML Template" />
-                        </a>
+                        <NavLink to={'home'}>
+                            <img className='w-50' src="/assets/images/logo/freshcart-logo.png" alt="logo" />
+                        </NavLink>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
                     </div>
                     <div className="offcanvas-body">
@@ -26,7 +26,7 @@ export default function Navigator() {
                             </form>
                         </div>
                         <div className="d-block d-lg-none mb-4">
-                            <NavLink to={'profile'} className="btn btn-dark w-100 d-flex justify-content-center align-items-center" >
+                            <NavLink to={'profile/order'} className="btn btn-dark w-100 d-flex justify-content-center align-items-center" >
                                 <span className="me-2">
                                     <i className="fa-solid fa-user fs-5 text-white" />
                                 </span>
@@ -60,7 +60,7 @@ export default function Navigator() {
                                     <NavLink className="nav-link" to={'blogs'} role="button" >Blogs</NavLink>
                                 </li>
                                 <li className="nav-item d-none d-lg-block">
-                                    <NavLink className="nav-link" to={'profile'}>Profile</NavLink>
+                                    <NavLink className="nav-link" to={'profile/'}>Profile</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <button className="nav-link text-danger" >Logout</button>

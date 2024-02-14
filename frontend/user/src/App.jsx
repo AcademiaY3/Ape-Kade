@@ -57,7 +57,7 @@ function App() {
             <Route path='blogs' element={<Blog />} />
             <Route path='blog/:id' element={<BlogDetail />} />
             <Route path='profile' element={<Profile />} >
-              <Route index element={<ProfileSettings />} />
+              <Route index element={<ProfileOrder />} />
               <Route path='order' element={<ProfileOrder />} />
               <Route path='settings' element={<ProfileSettings />} />
               <Route path='address' element={<ProfileAddress />} />

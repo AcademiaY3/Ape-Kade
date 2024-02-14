@@ -72,7 +72,7 @@ export default function SubHeader() {
                                 </Link>
                             </div>
                             <div className="list-inline-item">
-                                <NavLink to={'profile'} className="text-reset">
+                                <NavLink to={'profile/order'} className="text-reset">
                                     <i className="fa-solid fa-user fs-4 text-dark" />
                                 </NavLink>
                             </div>

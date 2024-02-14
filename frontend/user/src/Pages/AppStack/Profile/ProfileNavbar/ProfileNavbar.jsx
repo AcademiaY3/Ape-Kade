@@ -1,5 +1,6 @@
 import React from 'react'
 import ProfileCanvas from './ProfileCanvas'
+import { NavLink } from 'react-router-dom'
 
 export default function ProfileNavbar() {
     return (
@@ -25,38 +26,38 @@ export default function ProfileNavbar() {
                     <ul className="nav flex-column nav-pills nav-pills-dark">
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="account-orders.html">
+                            <NavLink className="nav-link" to={'order'} aria-current="page" >
                                 <i className="fa-solid fa-cart-shopping me-2" />
                                 Your Orders
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-settings.html">
+                            <NavLink className="nav-link" to={'settings'}>
                                 <i className="fa-solid fa-gear me-2" />
                                 Settings
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-address.html">
+                            <NavLink className="nav-link" to={'address'}>
                                 <i className="fa-solid fa-map me-2" />
                                 Address
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="account-payment-method.html">
+                            <NavLink className="nav-link" to={'payment'}>
                                 <i className="fa-solid fa-credit-card me-2" />
                                 Payment Method
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link active" href="account-notification.html">
+                            <NavLink className="nav-link" to={'notification'}>
                                 <i className="fa-solid fa-bell me-2" />
                                 Notification
-                            </a>
+                            </NavLink>
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
@@ -64,10 +65,10 @@ export default function ProfileNavbar() {
                         </li>
                         {/* nav item */}
                         <li className="nav-item">
-                            <a className="nav-link" href="../index.html">
+                            <button className="nav-link">
                                 <i className="fa-solid fa-right-from-bracket me-2" />
                                 Log out
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
