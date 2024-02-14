@@ -29,11 +29,11 @@ export default function AppStack() {
             {/* <WishList/> */}
             {/* <Checkout/> */}
             {/* <Error404/> */}
-            {/* <SellerStore/> */}
+            <SellerStore/>
             {/* <Sellers/> */}
             {/* <Profile/> */}
             {/* <Blog/> */}
-            <BlogDetail/>
+            {/* <BlogDetail/> */}
             <Footer/>
       </>
   )

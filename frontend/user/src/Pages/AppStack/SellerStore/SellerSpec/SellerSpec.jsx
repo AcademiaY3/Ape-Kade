@@ -38,29 +38,18 @@ export default function SellerSpec() {
             <hr />
             {/* nav */}
             <ul className="nav flex-column nav-pills nav-pills-dark">
-                {/* nav item */}
                 <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
                     <i className="fa-solid fa-bag-shopping me-4"/>
                         Shop
                     </a>
                 </li>
-                {/* nav item */}
-                <li className="nav-item">
-                    <a className="nav-link " href="#">
-                    <i className="fa-solid fa-star me-4"/>
-                        Reviews
-                    </a>
-                </li>
-                {/* nav item */}
-                {/* nav item */}
                 <li className="nav-item">
                     <a className="nav-link " href="#">
                     <i className="fa-solid fa-pen me-4"/>
                         Contact
                     </a>
                 </li>
-                {/* nav item */}
             </ul>
             <hr />
             <div>
