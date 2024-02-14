@@ -49,7 +49,7 @@ export default function ProfileAddress() {
                         </form>
                     </div>
                     <div className="d-none d-lg-flex justify-content-end align-items-start col-12 offset-lg-1 col-lg-4">
-                        <img src="../assets/images/profile/location.png" alt className="img-fluid rounded" />
+                        <img src="/assets/images/profile/location.png" alt className="img-fluid rounded" />
                     </div>
                 </div>
             </div>
