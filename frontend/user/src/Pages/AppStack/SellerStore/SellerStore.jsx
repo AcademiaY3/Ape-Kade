@@ -2,6 +2,7 @@ import React from 'react'
 import SellerSpec from './SellerSpec/SellerSpec'
 import SellerItems from './SellerItems/SellerItems'
 import SellerContact from './SellerContact/SellerContact'
+import { Outlet } from 'react-router-dom'
 
 export default function SellerStore() {
     return (
@@ -11,8 +12,9 @@ export default function SellerStore() {
                 <div className="row">
                     <SellerSpec />
                     {/* outlet should present here */}
+                    <Outlet/>
                     {/* <SellerItems /> */}
-                    <SellerContact/>
+                    {/* <SellerContact/> */}
                 </div>
             </div>
         </section>

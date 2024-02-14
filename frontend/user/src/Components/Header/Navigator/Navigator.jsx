@@ -1,14 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Navigator() {
     return (
         <nav className="navbar navbar-expand-lg bg-white py-0 py-lg-2 navbar-default border-bottom">
             <div className="container-fluid">
-                <div className="offcanvas offcanvas-start" tabIndex={-1} id="navbar-default" aria-labelledby="navbar-defaultLabel">
+                <div className="offcanvas offcanvas-start w-75" tabIndex={-1} id="navbar-default" aria-labelledby="navbar-defaultLabel">
                     <div className="offcanvas-header pb-1">
-                        <a href="./index.html">
-                            <img className='w-50' src="../assets/images/logo/freshcart-logo.png" alt="eCommerce HTML Template" />
-                        </a>
+                        <NavLink to={'home'}>
+                            <img className='w-50' src="/assets/images/logo/freshcart-logo.png" alt="logo" />
+                        </NavLink>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
                     </div>
                     <div className="offcanvas-body">
@@ -25,41 +26,44 @@ export default function Navigator() {
                             </form>
                         </div>
                         <div className="d-block d-lg-none mb-4">
-                            <a className="btn btn-dark w-100 d-flex justify-content-center align-items-center" >
+                            <NavLink to={'profile/order'} className="btn btn-dark w-100 d-flex justify-content-center align-items-center" >
                                 <span className="me-2">
                                     <i className="fa-solid fa-user fs-5 text-white" />
                                 </span>
                                 Vist Profile
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="mt-0 w-100 d-flex flex-row justify-content-between align-items-center">
                             <ul className="navbar-nav align-items-center navbar-offcanvas-color">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#" role="button" aria-expanded="false">Home</a>
+                                    <NavLink className="nav-link" to={'home'} role="button" end={true} >Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Shop</a>
+                                    <NavLink className="nav-link" to={'products'} role="button" >Shop</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Sellers</a>
+                                    <NavLink className="nav-link" to={'sellers'} role="button" >Sellers</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Contact Us</a>
+                                    <NavLink className="nav-link" to={'contact'} role="button" >Contact Us</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Cart</a>
+                                    <NavLink className="nav-link" to={'cart'} role="button" >Cart</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Whishlist</a>
+                                    <NavLink className="nav-link" to={'whishlist'} role="button" >Whishlist</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">About Us</a>
+                                    <NavLink className="nav-link" to={'about'} role="button" >About Us</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#" role="button" aria-expanded="false">Blogs</a>
+                                    <NavLink className="nav-link" to={'blogs'} role="button" >Blogs</NavLink>
+                                </li>
+                                <li className="nav-item d-none d-lg-block">
+                                    <NavLink className="nav-link" to={'profile/'}>Profile</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-danger" href="#" role="button" aria-expanded="false">Logout</a>
+                                    <button className="nav-link text-danger" >Logout</button>
                                 </li>
                             </ul>
                             <div className="d-flex flex-row justify-content-around align-items-center d-none d-lg-block">

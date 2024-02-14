@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function CartModel() {
     return (
 
-        <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas offcanvas-end w-75 w-md-auto" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div className="offcanvas-header border-bottom">
                 <div className="text-start">
                     <h5 id="offcanvasRightLabel" className="mb-0 fs-4">Shopping Cart</h5>
@@ -20,12 +21,10 @@ export default function CartModel() {
                             <div className="row align-items-center">
                                 <div className="col-6 col-md-6 col-lg-7">
                                     <div className="d-flex align-items-center">
-                                        <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce" className="icon-shape icon-xxl" />
+                                        <img src="/assets/images/products/product-img-1.jpg" alt="Ecommerce" className="icon-shape icon-xxl" />
                                         <div className="ms-3">
                                             {/* title */}
-                                            <a href="../pages/shop-single.html" className="text-inherit">
-                                                <h6 className="mb-0">{'Haldirams Sev Bhujia'}</h6>
-                                            </a>
+                                            <h6 className="mb-0">{'Haldirams Sev Bhujia'}</h6>
                                             <span><small className="text-muted">.98 / lb</small></span>
                                         </div>
                                     </div>
@@ -46,7 +45,7 @@ export default function CartModel() {
                     </ul>
                     {/* btn */}
                     <div className="d-flex justify-content-end mt-4">
-                        <a href="#!" className="btn btn-dark">Go To Cart</a>
+                        <NavLink to={'cart'} className="btn btn-dark">Go To Cart</NavLink>
                     </div>
                 </div>
             </div>

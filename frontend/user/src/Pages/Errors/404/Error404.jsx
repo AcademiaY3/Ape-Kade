@@ -1,40 +1,36 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Error404() {
+    const navigate = useNavigate()
+    const handleBackToHome = () => {
+        navigate('/app')
+    }
     return (
         <section>
-            <div className="container d-flex flex-column">
+            <div className="container d-flex flex-column justify-content-center align-items-center">
                 {/* row */}
                 <div className="row min-vh-100 justify-content-center align-items-center">
                     {/* col */}
-                    <div className="offset-lg-1 col-lg-10 py-8 py-xl-0">
-                        <div className="mb-10 mb-xxl-0">
-                            {/* img */}
-                            <a href="../index.html"><img src="../assets/images/logo/freshcart-logo.svg" alt /></a>
-                        </div>
-                        <div className="row justify-content-center align-items-center">
+                    <div className="col-12 ">
+                        <div className="row">
                             {/* content */}
-                            <div className="col-md-6">
-                                <div className="mb-6 mb-lg-0">
-                                    <h1>Something’s wrong here...</h1>
-                                    <p className="mb-8">
-                                        We can’t find the page you’re looking for.
-                                        <br />
-                                        Check out our help center or head back to home.
-                                    </p>
-                                    {/* btn */}
-                                    <a href="#" className="btn btn-dark">
-                                        Help Center
-                                        <i className="feather-icon icon-arrow-right" />
-                                    </a>
-                                    {/* btn */}
-                                    <a href="../index.html" className="btn btn-primary ms-2">Back to home</a>
+                            <div className="col-12">
+                                <div className='text-center'>
+                                    {/* img */}
+                                    <img src="/assets/images/svg-graphics/error.svg" alt className="img-fluid" />
                                 </div>
                             </div>
-                            <div className="col-md-6">
-                                <div>
-                                    {/* img */}
-                                    <img src="../assets/images/svg-graphics/error.svg" alt className="img-fluid" />
+                            <div className="col-12">
+                                <div className="text-center">
+                                    <h1>Something’s wrong here...</h1>
+                                    <p className="mb-8 text-capitalize">
+                                        We can’t find the page you’re looking for,back to home.
+                                        <br />
+                                        Check out our help center for help 
+                                    </p>
+                                    {/* btn */}
+                                    <button onClick={()=>{handleBackToHome()}} className="btn btn-primary ms-2">Back to home</button>
                                 </div>
                             </div>
                         </div>
