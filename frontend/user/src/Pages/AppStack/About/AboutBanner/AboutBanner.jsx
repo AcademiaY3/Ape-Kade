@@ -29,7 +29,7 @@ export default function AboutBanner() {
                                 <div className="col-12">
                                     {/* text */}
                                     <p>
-                                        For assistance using Freshcart services, please visit our
+                                        For assistance using Apekade services, please visit our
                                         <a href="#">Help Center</a>
                                     </p>
                                 </div>

@@ -12,10 +12,10 @@ export default function AboutCard() {
                             {/* img */}
                             <img src="../assets/images/about/about-icons-1.svg" alt />
                         </div>
-                        <h4>Grow my business with Freshcart</h4>
+                        <h4>Grow my business with Apekade</h4>
                         <p>Duis placerat, urna ut dictum lobortis, erat libero feugiat nulla, ullamcorper fermentum lectus dolor ut tortor.</p>
                         {/* btn */}
-                        <a href="#" className="btn btn-dark mt-2">FreshCart Platform</a>
+                        <a href="#" className="btn btn-dark mt-2">Apekade Platform</a>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function MobilePreview() {
                                 <img src="../assets/images/about/about-icons-1.svg" alt className="img-fluid" />
                                 {/* text */}
                                 <div className="ms-lg-4">
-                                    <h1 className="fs-2 mb-1">Welcome to FreshCart</h1>
+                                    <h1 className="fs-2 mb-1">Welcome to Apekade</h1>
                                     <span>
                                         Download the app get free food &amp;
                                         <span className="text-primary">$30</span>
@@ -25,7 +25,7 @@ export default function MobilePreview() {
                             </div>
                             <div className="mt-3 mt-lg-0">
                                 {/* btn */}
-                                <a href="#" className="btn btn-dark">Download FreshCart App</a>
+                                <a href="#" className="btn btn-dark">Download Apekade App</a>
                             </div>
                         </div>
                     </div>
