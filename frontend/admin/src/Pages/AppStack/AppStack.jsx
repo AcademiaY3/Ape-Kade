@@ -16,13 +16,13 @@ export default function AppStack() {
       <div className="main-wrapper">
         <MainSideNav />
         {/* outlet */}
-        {/* <Dashboard/> */}
+        <Dashboard/>
         {/* <Products/> */}
         {/* <Categories/> */}
         {/* <Orders/> */}
         {/* <Sellers/> */}
         {/* <Customers/> */}
-        <Reviews/>
+        {/* <Reviews/> */}
       </div>
     </>
   )
