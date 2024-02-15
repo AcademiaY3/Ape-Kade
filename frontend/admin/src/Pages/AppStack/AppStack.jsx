@@ -10,6 +10,8 @@ import Customers from './Customers/Customers'
 import Reviews from './Reviews/Reviews'
 import AddProducts from './AddProducts/AddProducts'
 import AddCategory from './AddCategory/AddCategory'
+import AddCustomers from './AddCustomers/AddCustomers'
+import AddSeller from './AddSeller/AddSeller'
 
 export default function AppStack() {
   return (
@@ -22,11 +24,13 @@ export default function AppStack() {
         {/* <Products/> */}
         {/* <Categories/> */}
         {/* <Orders/> */}
-        {/* <Sellers/> */}
+        <Sellers/>
         {/* <Customers/> */}
         {/* <Reviews/> */}
         {/* <AddProducts/> */}
-        <AddCategory/>
+        {/* <AddCategory/> */}
+        {/* <AddCustomers/> */}
+        {/* <AddSeller/> */}
       </div>
     </>
   )
