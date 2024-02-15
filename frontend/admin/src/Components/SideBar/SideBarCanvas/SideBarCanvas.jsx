@@ -6,7 +6,7 @@ export default function SideBarCanvas() {
         <nav className="navbar-vertical-nav offcanvas offcanvas-start navbar-offcanvac" tabIndex={-1} id="offcanvasExample">
             <div className="navbar-vertical">
                 <div className="px-4 py-5 d-flex justify-content-between align-items-center">
-                    <NavLink to={'dashboard'} className="navbar-brand">
+                    <NavLink end={true} to={'dashboard'} className="navbar-brand">
                         <img className='img-fluid w-50' src="/assets/images/logo/freshcart-logo.png" alt />
                     </NavLink>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
@@ -14,7 +14,7 @@ export default function SideBarCanvas() {
                 <div className="navbar-vertical-content flex-grow-1" data-simplebar>
                     <ul className="navbar-nav flex-column">
                         <li className="nav-item">
-                        <NavLink to={'dashboard'} className="nav-link active " >
+                        <NavLink end={true} to={'dashboard'} className="nav-link " >
                                 <div className="d-flex align-items-center">
                                     <span className="nav-link-icon"><i className="fa-solid fa-dashboard" /></span>
                                     <span className="nav-link-text">Dashboard</span>
