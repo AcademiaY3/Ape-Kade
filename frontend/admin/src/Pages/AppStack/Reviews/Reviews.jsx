@@ -1,29 +1,17 @@
 import React from 'react'
+import BreadCrumb from '../../../Components/BreadCrumb/BreadCrumb'
+import Paginator from '../../../Components/Paginator/Paginator'
 
 export default function Reviews() {
     return (
         <main className="main-content-wrapper">
             <div className="container">
-                <div className="row mb-8">
-                    <div className="col-md-12">
-                        <div>
-                            {/* page header */}
-                            <h2>Reviews</h2>
-                            {/* breacrumb */}
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb mb-0">
-                                    <li className="breadcrumb-item"><a href="#" className="text-inherit">Dashboard</a></li>
-                                    <li className="breadcrumb-item active" aria-current="page">Reviews</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                <BreadCrumb icon={'fa-star'} page={'Reviews'}/>
                 {/* row */}
                 <div className="row">
                     <div className="col-xl-12 col-12 mb-5">
                         {/* card */}
-                        <div className="card h-100 card-lg">
+                        <div className="card h-100 card">
                             <div className="p-6">
                                 <div className="row justify-content-between">
                                     <div className="col-md-4 col-12 mb-2 mb-md-0">
@@ -105,18 +93,7 @@ export default function Reviews() {
                                         </tbody>
                                     </table>
                                 </div>
-                                <div className="border-top d-md-flex justify-content-between align-items-center p-6">
-                                    <span>Showing 1 to 8 of 12 entries</span>
-                                    <nav className="mt-2 mt-md-0">
-                                        <ul className="pagination mb-0">
-                                            <li className="page-item disabled"><a className="page-link" >Previous</a></li>
-                                            <li className="page-item"><a className="page-link active" >1</a></li>
-                                            <li className="page-item"><a className="page-link" >2</a></li>
-                                            <li className="page-item"><a className="page-link" >3</a></li>
-                                            <li className="page-item"><a className="page-link" >Next</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                                <Paginator/>
                             </div>
                         </div>
                     </div>

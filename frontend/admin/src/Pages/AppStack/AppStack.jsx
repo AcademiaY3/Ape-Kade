@@ -12,6 +12,9 @@ import AddProducts from './AddProducts/AddProducts'
 import AddCategory from './AddCategory/AddCategory'
 import AddCustomers from './AddCustomers/AddCustomers'
 import AddSeller from './AddSeller/AddSeller'
+import Profile from './Profile/Profile'
+import AppNotifications from './AppNotifications/AppNotifications'
+import { Outlet } from 'react-router-dom'
 
 export default function AppStack() {
   return (
@@ -20,17 +23,20 @@ export default function AppStack() {
       <div className="main-wrapper">
         <MainSideNav />
         {/* outlet */}
+        <Outlet/>
         {/* <Dashboard/> */}
         {/* <Products/> */}
         {/* <Categories/> */}
         {/* <Orders/> */}
-        <Sellers/>
+        {/* <Sellers/> */}
         {/* <Customers/> */}
         {/* <Reviews/> */}
         {/* <AddProducts/> */}
         {/* <AddCategory/> */}
         {/* <AddCustomers/> */}
         {/* <AddSeller/> */}
+        {/* <Profile/> */}
+        {/* <AppNotifications/> */}
       </div>
     </>
   )

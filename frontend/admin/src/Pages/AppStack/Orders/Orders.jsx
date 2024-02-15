@@ -1,30 +1,17 @@
 import React from 'react'
+import BreadCrumb from '../../../Components/BreadCrumb/BreadCrumb'
 
 export default function Orders() {
     return (
         <main className="main-content-wrapper">
             <div className="container">
                 {/* row */}
-                <div className="row mb-8">
-                    <div className="col-md-12">
-                        {/* page header */}
-                        <div>
-                            <h2>Order List</h2>
-                            {/* breacrumb */}
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb mb-0">
-                                    <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                    <li className="breadcrumb-item active" aria-current="page">Order List</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                <BreadCrumb page={'Orders'} icon={'fa-shopping-bag'}/>
                 {/* row */}
                 <div className="row">
                     <div className="col-xl-12 col-12 mb-5">
                         {/* card */}
-                        <div className="card h-100 card-lg">
+                        <div className="card h-100 card">
                             <div className="p-6">
                                 <div className="row justify-content-between">
                                     <div className="col-md-4 col-12 mb-2 mb-md-0">
