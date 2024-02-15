@@ -8,6 +8,8 @@ import Orders from './Orders/Orders'
 import Sellers from './Sellers/Sellers'
 import Customers from './Customers/Customers'
 import Reviews from './Reviews/Reviews'
+import AddProducts from './AddProducts/AddProducts'
+import AddCategory from './AddCategory/AddCategory'
 
 export default function AppStack() {
   return (
@@ -16,13 +18,15 @@ export default function AppStack() {
       <div className="main-wrapper">
         <MainSideNav />
         {/* outlet */}
-        <Dashboard/>
+        {/* <Dashboard/> */}
         {/* <Products/> */}
         {/* <Categories/> */}
         {/* <Orders/> */}
         {/* <Sellers/> */}
         {/* <Customers/> */}
         {/* <Reviews/> */}
+        {/* <AddProducts/> */}
+        <AddCategory/>
       </div>
     </>
   )
