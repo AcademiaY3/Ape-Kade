@@ -4,7 +4,7 @@ export default function RecentOrders() {
     return (
         <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-12 mb-6">
-                <div className="card h-100 card-lg">
+                <div className="card h-100 card">
                     {/* heading */}
                     <div className="p-6">
                         <h3 className="mb-0 fs-5">Recent Order</h3>

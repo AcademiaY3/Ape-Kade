@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function DashBanner() {
+    const navigate = useNavigate()
+    const navToUsers = () => {
+        navigate('/app/customers')
+    }
     return (
         <div className="row mb-8">
             <div className="col-md-12">
@@ -9,7 +14,7 @@ export default function DashBanner() {
                     <div className="card-body">
                         <h1>Welcome Back!</h1>
                         <p className='text-capitalize'>Users are waiting , until your services to the apeKade.</p>
-                        <button className="btn btn-primary">See All Users</button>
+                        <button onClick={()=>{navToUsers()}} className="btn btn-primary">See All Users</button>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ export default function DashCustomer() {
     return (
         <div className="col-lg-4 col-12 mb-6">
             {/* card */}
-            <div className="card-lg h-100 ">
+            <div className="card h-100 ">
                 {/* card body */}
                 <div className="card-body p-6">
                     {/* heading */}

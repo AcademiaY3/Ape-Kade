@@ -1,35 +1,17 @@
 import React from 'react'
+import BreadCrumb from '../../../Components/BreadCrumb/BreadCrumb'
+import Paginator from '../../../Components/Paginator/Paginator'
 
 export default function Products() {
     return (
         <main className="main-content-wrapper pb-6 px-0 px-md-4">
             <div className="container">
-                <div className="row mb-8">
-                    <div className="col-md-12">
-                        {/* page header */}
-                        <div className="d-md-flex justify-content-between align-items-center">
-                            <div>
-                                <h2>Products</h2>
-                                {/* breacrumb */}
-                                <nav aria-label="breadcrumb">
-                                    <ol className="breadcrumb mb-0">
-                                        <li className="breadcrumb-item"><a href="#" className="text-inherit">Dashboard</a></li>
-                                        <li className="breadcrumb-item active" aria-current="page">Products</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                            {/* button */}
-                            <div>
-                                <a href="add-product.html" className="btn btn-dark">Add Product</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <BreadCrumb page={'Products'} icon={'fa-shopping-cart'}/>
                 {/* row */}
                 <div className="row">
                     <div className="col-xl-12 col-12 mb-5">
                         {/* card */}
-                        <div className="card h-100 card-lg">
+                        <div className="card h-100 card">
                             <div className="px-6 py-6">
                                 <div className="row justify-content-between">
                                     {/* form */}
@@ -39,13 +21,8 @@ export default function Products() {
                                         </form>
                                     </div>
                                     {/* select option */}
-                                    <div className="col-lg-2 col-md-4 col-12">
-                                        <select className="form-select">
-                                            <option selected>Status</option>
-                                            <option value={1}>Active</option>
-                                            <option value={2}>Deactive</option>
-                                            <option value={3}>Draft</option>
-                                        </select>
+                                    <div className="col-lg-2 col-md-4 col-12 text-end">
+                                        <button className='btn btn-dark'>Add Product</button>
                                     </div>
                                 </div>
                             </div>
@@ -115,18 +92,7 @@ export default function Products() {
                                     </table>
                                 </div>
                             </div>
-                            <div className="border-top d-md-flex justify-content-between align-items-center px-6 py-6">
-                                <span>Showing 1 to 8 of 12 entries</span>
-                                <nav className="mt-2 mt-md-0">
-                                    <ul className="pagination mb-0">
-                                        <li className="page-item disabled"><a className="page-link" href="#!">Previous</a></li>
-                                        <li className="page-item"><a className="page-link active" href="#!">1</a></li>
-                                        <li className="page-item"><a className="page-link" href="#!">2</a></li>
-                                        <li className="page-item"><a className="page-link" href="#!">3</a></li>
-                                        <li className="page-item"><a className="page-link" href="#!">Next</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                            <Paginator/>
                         </div>
                     </div>
                 </div>

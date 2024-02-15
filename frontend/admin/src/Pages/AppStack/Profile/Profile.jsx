@@ -1,15 +1,17 @@
 import React from 'react'
 import BreadCrumb from '../../../Components/BreadCrumb/BreadCrumb'
 
-export default function AddCategory() {
+export default function Profile() {
     return (
         <main className="main-content-wrapper pb-6 px-0 px-md-4 pt-14">
             <div className="container">
-                <BreadCrumb page={'Add Category'} icon={'fa-sitemap'} />
+                <BreadCrumb page={'My Profile'} icon={'fa-user'} />
                 {/* row */}
                 <div className="row">
-                    <div className="col-md-7 col-12 mb-5">
+                    <div className="col-md-8 col-12 mb-5">
                         <div className="card p-5">
+                            <h4 className='mb-0'>Account Settings</h4>
+                            <p className='mt-0'>All the personal info goes here</p>
                             <form>
                                 <div className="row row-gap-4">
                                     <div className="col-md-6">
@@ -44,14 +46,18 @@ export default function AddCategory() {
                                         <input type="text" className="form-control" placeholder="Business Name" />
                                     </div>
                                     <div className="col-12 text-end">
-                                        <button className='btn btn-primary'>Add Category</button>
+                                        <button className='btn btn-primary'>Edit Details</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div className="col-md-3 offset-1 col-12 d-none d-md-block card">
-                        <img src="/assets/images/banner/catBanner.png" className='rounded img-fluid' alt="banner" />
+                    <div className="col-md-4 col-12">
+                        <div className="card p-3 d-flex justify-content-center align-items-center">
+                            <h5>Image Preview</h5>
+                            <img src="/assets/images/avatar/avatar-4.jpg" className=' rounded img-fluid' alt="banner" />
+                            {/* <button className='btn btn-danger mt-3'>Remove Image</button> */}
+                        </div>
                     </div>
                 </div>
             </div>
