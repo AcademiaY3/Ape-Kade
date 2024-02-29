@@ -4,6 +4,8 @@ import cors from 'cors'
 import corsOption from "./Config/CorsConfig.js";
 import logger from "./Logs/logger.js";
 import proxy from 'express-http-proxy'
+import TokenWare from "./Middleware/RabbitClient/TokenWare.js";
+import consumeMessages from "./Middleware/RabbitClient/consumeMessages.js";
 
 dotenv.config()
 const app = express()
@@ -18,7 +20,9 @@ app.get('/', (req, res) => {
 })
 
 // proxies
-app.use('/product',proxy("https://www.youtube.com"))
+app.use('/product', TokenWare,proxy("https://www.youtube.com"))
+
+consumeMessages()
 
 app.use((req, res) => {
     return res.status(404).json({'msg':'invalid routes'})
