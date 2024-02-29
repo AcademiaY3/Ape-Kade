@@ -4,7 +4,7 @@ import RabbitMQCon from '../../Config/Connections/RabbitMQCon.js'
 const SendToken = async (token) => {
     const { channel } = await RabbitMQCon.connect()
     try {
-        const queue = 'auth-queue'
+        const queue = process.env.TOKEN_QUEUE
         const correlationId = uuid()
         const replyQue = await channel.assertQueue('', { exclusive: true })
 
