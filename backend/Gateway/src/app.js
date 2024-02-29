@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 // proxies
 app.use('/auth', TokenWare ,proxy(process.env.auth_service_route))
 
-
+//not found route
 app.use((req, res) => {
     return response(res,404,HttpType.getStatus(404),ResTypes.errors.not_found)
 })
