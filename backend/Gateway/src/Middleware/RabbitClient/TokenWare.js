@@ -6,10 +6,8 @@ import SendToken from "./SendToken.js";
 const TokenWare =  async(req,res,next) => {
     try {
         const authHeader = req.headers.authorization
-        if (!authHeader) {
-            return response(res,401,HttpType.getStatus(401),ResTypes.errors.missing_token)
-        }
         const token = authHeader.split(" ")[1]
+        
         const validationResponse = await SendToken(token);
         if(validationResponse.authenticated)
             next()

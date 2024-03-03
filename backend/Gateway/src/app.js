@@ -8,6 +8,7 @@ import TokenWare from "./Middleware/RabbitClient/TokenWare.js";
 import response from "./Utils/ResponseHandler/ResponseHandler.js";
 import HttpType from "./Utils/Constants/HttpTypes.js";
 import ResTypes from "./Utils/Constants/ResTypes.js";
+import checkHeaders from "./Middleware/CheckHeaders/CheckHeaders.js";
 
 dotenv.config()
 const app = express()
@@ -18,15 +19,15 @@ app.use(express.json())
 app.use(logger)
 
 app.get('/', (req, res) => {
-    return response(res,200,HttpType.getStatus(200),ResTypes.successMessages.server_online)
+    return response(res,200,ResTypes.successMessages.server_online)
 })
 
 // proxies
-app.use('/auth', TokenWare ,proxy(process.env.auth_service_route))
+app.use('/auth', checkHeaders ,TokenWare ,proxy(process.env.auth_service_route))
 
 //not found route
 app.use((req, res) => {
-    return response(res,404,HttpType.getStatus(404),ResTypes.errors.not_found)
+    return response(res,404,ResTypes.errors.not_found)
 })
 
 app.listen(PORT, () => {
