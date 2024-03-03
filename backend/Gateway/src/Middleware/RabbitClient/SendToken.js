@@ -10,7 +10,7 @@ const SendToken = async (token) => {
 
         const validationPromise = new Promise((resolve, reject) => {
             const timoeout = setTimeout(() => {
-                reject('API couldnt Full Fill Request')
+                reject({'message':'API couldnt Full Fill Request'})
             }, 8000)
 
             channel.consume(replyQue.queue, (message) => {
@@ -20,7 +20,7 @@ const SendToken = async (token) => {
                     clearTimeout(timoeout)
                     resolve(userValidated);
                 } else {
-                    reject('Response Data 404')
+                    reject({'message':'Response Data 404'})
                 }
             }, { noAck: true })
         })

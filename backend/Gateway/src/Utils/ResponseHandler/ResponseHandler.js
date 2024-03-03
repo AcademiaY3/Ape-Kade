@@ -1,4 +1,7 @@
-const response = (res, code, status, data ) => {
+import HttpType from "../Constants/HttpTypes.js";
+
+const response = (res, code, data) => {
+    const status = HttpType.getStatus(code)
     const payLoad = {
         code,
         status,
