@@ -17,6 +17,7 @@ const checkHeaders = (req,res,next) => {
     if (!token) {
         return response(res,404,ResTypes.errors.missing_token)
     }
+    
     if (!roles.includes(authRole.toLowerCase())) {
         return response(res,403,ResTypes.errors.not_found_role)
     }
