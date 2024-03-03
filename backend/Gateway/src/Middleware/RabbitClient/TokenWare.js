@@ -12,9 +12,9 @@ const TokenWare =  async(req,res,next) => {
         if(validationResponse.authenticated)
             next()
         else if(!validationResponse.authenticated)
-            return response(res, 400, HttpType.getStatus(400), ResTypes.errors.invalid_token)
+            return response(res, 400, ResTypes.errors.invalid_token)
     } catch (error) {
-        return response(res,403,HttpType.getStatus(403),error)
+        return response(res,403,error)
     }
 }
 
